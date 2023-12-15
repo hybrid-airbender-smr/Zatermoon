@@ -3,7 +3,6 @@ import os
 import time
 from datetime import datetime
 import tkinter as tk
-from threading import Thread
 
 # Function to update the countdown label
 def update_countdown():
@@ -16,7 +15,7 @@ def update_countdown():
         root.destroy()
 
 # Set the camera index
-camera_index = 0
+camera_index = 2
 range_value = 5  # Adjust the number of captures as needed
 
 # Set the directory to save the images
@@ -59,6 +58,9 @@ try:
             print("Error: Failed to capture frame.")
             break
 
+        # Display the captured frame in a new window
+        cv2.imshow(f'Frame {i + 1}', frame)
+
         # Generate a unique filename using the current date and time
         current_time = datetime.now().strftime("%Y%m%d%H%M%S")
         filename = os.path.join(save_directory, f'image_{current_time}_{i + 1}.png')
@@ -69,8 +71,8 @@ try:
         # Display a message
         print(f"Image {i + 1} captured and saved as {filename}")
 
-        # Close the Tkinter window
-        root.destroy()
+    # Wait for a key press to close OpenCV windows
+    cv2.waitKey(0)
 
 finally:
     # Release the camera when done

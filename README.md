@@ -11,7 +11,8 @@ the robot.py uses pre-determined coordinate and must be use in [drl studio](http
 
 
 the vision.py
-We use OpenCV's MatchTemplate, and it utilizes images from the MatchTemplate folder. _The challenge we face is to precisely try matching the images. Additionally, taking lighting into account is incredibly difficult_
+We use OpenCV's MatchTemplate, and it utilizes images from the MatchTemplate zip file. 
+> _The challenge we face is to precisely try matching the images. Additionally, taking lighting into account is incredibly difficult_
 
 additional code that uses in the demo 
 servermain.py it uses pre-determined orientation and coordinate as well thats alpha-beta-charlie-alpha-beta.

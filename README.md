@@ -1,6 +1,6 @@
 # Deltabot Group Silicon project
 
-the robot.py uses it's own library reference from the programming manual [link](https://manual.doosanrobotics.com/help/programming/latest/publish/en_us/programming-manual-v2-10-3-54692282.html)
+the robot.py uses it's own library reference from the programming manual [pdf](https://manual.doosanrobotics.com/help/programming/latest/publish/en_us/programming-manual-v2-10-3-54692282.html)
 the robot.py uses pre-determined coordinate and must be use in [drl studio](https://www.homberger-robotica.com/prodotti/homberger-hub/drl-studio/) integrated development enviroment to function properly 
 
 

@@ -14,5 +14,6 @@ the vision.py
 We use OpenCV's MatchTemplate, and it utilizes images from the MatchTemplate folder. _The challenge we face is to precisely try matching the images. Additionally, taking lighting into account is incredibly difficult_
 
 additional code that uses in the demo 
-servermain.py it uses pre-determined orientation and coordinate as well thats alpha-beta-charlie-alpha-beta
+servermain.py it uses pre-determined orientation and coordinate as well thats alpha-beta-charlie-alpha-beta.
+
 _We have discovered that using joint coordinates is more reliable for large movements but with disadvantageous curves movement when placing objects. However, employing linear or world coordinates proves to be more accurate for the precise placement of these objects._
